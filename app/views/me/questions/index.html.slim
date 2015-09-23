@@ -1,0 +1,7 @@
+h1
+  | Me::Questions#index
+p
+  | Find me in app/views/questions/index.html.slim
+
+- flash.each do |key, value|
+  = content_tag(:div, value, class: key)
