@@ -10,10 +10,12 @@ p
 p = link_to 'Logout', destroy_user_session_path, method: :delete
 
 p = link_to 'New Question', new_me_question_path
-  
 
-h2. my questions
+h2
+  a href=me_questions_path
+    | my questions
 
+- if @questions
 table
   tr
     th
@@ -22,18 +24,14 @@ table
       | title
     th
       | content
-  tr
-    td 2015/10/03
-    td タイトル3
-    td 内容ううう...
-  tr
-    td 2015/10/02
-    td タイトル2
-    td 内容いいい...
-  tr
-    td 2015/10/01
-    td タイトル1
-    td 内容あああ...
+  - @questions.each do |q|
+    tr
+      td
+        = q.created_at
+      td
+        = q.title
+      td
+        = q.body
 
 h2. my answers
 

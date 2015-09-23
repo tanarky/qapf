@@ -1,7 +1,22 @@
 h1
   | Me::Questions#index
-p
-  | Find me in app/views/questions/index.html.slim
 
-- flash.each do |key, value|
-  = content_tag(:div, value, class: key)
+p = link_to 'My page top', me_path
+
+- if @questions
+table
+  tr
+    th
+      | date
+    th
+      | title
+    th
+      | content
+  - @questions.each do |q|
+    tr
+      td
+        = q.created_at
+      td
+        = q.title
+      td
+        = q.body

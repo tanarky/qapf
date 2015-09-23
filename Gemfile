@@ -57,6 +57,7 @@ gem 'simple_form'
 gem 'ransack'
 gem 'kaminari'
 gem 'active_decorator'
+gem 'seed-fu'
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rbenv'
