@@ -1,0 +1,20 @@
+h1 Categories#index
+p Find me in app/views/categories/index.html.slim
+
+- if @categories
+table
+  tr
+    th
+      | date
+    th
+      | name
+    th
+      | parent_id
+  - @categories.each do |c|
+    tr
+      td
+        = c.created_at
+      td
+        = c.name
+      td
+        = c.parent_id

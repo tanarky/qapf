@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   end
 
   get '/questions' => 'questions#index'
+
+  resources :categories
 end
