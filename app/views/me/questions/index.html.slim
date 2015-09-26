@@ -3,20 +3,4 @@ h1
 
 p = link_to 'My page top', me_path
 
-- if @questions
-table
-  tr
-    th
-      | date
-    th
-      | title
-    th
-      | content
-  - @questions.each do |q|
-    tr
-      td
-        = q.created_at
-      td
-        = q.title
-      td
-        = q.body
+= render 'questions.html.slim'

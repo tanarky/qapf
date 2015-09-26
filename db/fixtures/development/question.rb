@@ -10,6 +10,7 @@ Question.seed do |s|
 いいい
 CODE
   s.user_id = 1
+  s.category_id = 1
 end
 
 Question.seed do |s|
@@ -23,6 +24,7 @@ Question.seed do |s|
 えええ
 CODE
   s.user_id = 2
+  s.category_id = 2
 end
 
 Question.seed do |s|
@@ -36,6 +38,7 @@ Question.seed do |s|
 かかか
 CODE
   s.user_id = 1
+  s.category_id = 3
 end
 
 Question.seed do |s|
@@ -49,4 +52,5 @@ Question.seed do |s|
 くくく
 CODE
   s.user_id = 2
+  s.category_id = 4
 end

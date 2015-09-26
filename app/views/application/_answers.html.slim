@@ -1,0 +1,17 @@
+- if @answers.present?
+  table
+    tr
+      th
+        | date
+      th
+        | Q title
+      th
+        | content
+    - @answers.each do |q|
+      tr
+        td
+          = q.created_at
+        td
+          = q.question.title
+        td
+          = q.body

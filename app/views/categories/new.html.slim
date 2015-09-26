@@ -1,2 +1,9 @@
 h1 Categories#new
-p Find me in app/views/categories/new.html.slim
+
+p = link_to 'category index', categories_path
+
+= simple_form_for @category, :url => categories_path do |f|
+  = f.input :name
+  = f.button :submit
+
+

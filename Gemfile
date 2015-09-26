@@ -58,6 +58,7 @@ gem 'ransack'
 gem 'kaminari'
 gem 'active_decorator'
 gem 'seed-fu'
+gem 'pundit'
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rbenv'

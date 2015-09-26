@@ -1,5 +1,4 @@
 h1 Categories#index
-p Find me in app/views/categories/index.html.slim
 
 - if @categories
 table
@@ -18,3 +17,7 @@ table
         = c.name
       td
         = c.parent_id
+
+
+- if current_user.admin?
+  p = link_to 'new category', new_category_path

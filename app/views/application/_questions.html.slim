@@ -1,0 +1,22 @@
+- if @questions.present?
+  table
+    tr
+      th
+        | date
+      th
+        | category
+      th
+        | title
+      th
+        | content
+    - @questions.each do |q|
+      tr
+        td
+          = q.created_at
+        td
+          - if q.category
+            = q.category.name
+        td
+          = q.title
+        td
+          = q.body
