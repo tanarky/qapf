@@ -14,7 +14,7 @@ h2
   a href=me_questions_path
     | my questions
 
-= render 'questions.html.slim'
+= render partial:'questions.html.slim', locals: {questions: @questions, categories: @categories}
 
 h2. my answers
 

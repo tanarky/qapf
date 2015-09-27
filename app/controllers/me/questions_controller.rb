@@ -3,7 +3,7 @@ class Me::QuestionsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @questions = Question.where(user_id: current_user.id).joins(:category).order("id desc").page
+    @questions = Question.where(user_id: current_user.id).order("id desc").page
   end
 
   def new

@@ -3,4 +3,4 @@ h1
 
 p = link_to 'My page top', me_path
 
-= render 'questions.html.slim'
+= render partial:'questions.html.slim', locals: {questions: @questions, categories: @categories}
