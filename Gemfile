@@ -64,6 +64,7 @@ gem 'libv8', '3.16.14.3'
 gem 'therubyracer', '0.12.1'
 gem 'execjs'
 gem 'twitter-bootstrap-rails'
+gem 'ancestry'
 group :development, :test do
   gem 'capistrano'
   gem 'capistrano-rbenv'
