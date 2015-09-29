@@ -28,12 +28,7 @@ html lang="en"
         a.navbar-brand href=root_path Q&amp;A
         .navbar-collapse.collapse.navbar-responsive-collapse
           ul.nav.navbar-nav
-            li
-              a.dropdown-toggle href="#" data-toggle="dropdown" Categories
-              ul.dropdown-menu role="menu"
-                - @categories.each do |c|
-                  li
-                    a href=category_path(c.id) =c.name
+            li= link_to "Categories", categories_path
             - if current_user
               li= link_to "Logout", destroy_user_session_path, method: :delete
               li= link_to "My page", me_path
@@ -62,13 +57,8 @@ html lang="en"
     .navbar.navbar-default.navbar-static-bottom
       .container
         footer
-          h3 サイトマップ
-          ul
-            li
-              a href=categories_path カテゴリ
-              ul
-                - @categories.each do |c|
-                  li
-                    a href=category_path(c.id) =c.name
+          h3 カテゴリ
+
+          == category_tree_view(@cat_hash, @cat_tree, '0', 3)
                 
           p &copy; Company 2015

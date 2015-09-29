@@ -1,24 +1,6 @@
 h1 Categories#index
 
-- if @categories
-table
-  tr
-    th
-      | date
-    th
-      | name
-    th
-      | parent_id
-  - @categories.each do |c|
-    tr
-      td
-        = c.created_at
-      td
-        = c.name
-      td
-        = c.parent_id
+== category_tree_view(@cat_hash, @cat_tree, '0', 3)
 
-== @cat_tree_view
-
-- if current_user.admin?
+- if current_user and current_user.admin?
   p = link_to 'new category', new_category_path

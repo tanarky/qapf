@@ -19,27 +19,6 @@ class ApplicationController < ActionController::Base
         @cat_tree[c.ancestry].push(c.id)
       end
     end
-
-    depth = 3
-    start = '0'
-    @cat_tree_view = tree_view(@cat_hash, @cat_tree, start, depth)
-  end
-
-  def tree_view(h, t, start, depth)
-    if depth < 1 or t[start] == nil
-      return ''
-    end
-
-    html = '<ul>'
-    t[start].each do |i|
-      key = "#{start}/#{i}"
-      html += '<li>'
-      html += h[i]['name']
-      html += tree_view(h, t, key, depth - 1)
-      html += '</li>'
-    end
-    html += '</ul>'
-    html
   end
 end
 
