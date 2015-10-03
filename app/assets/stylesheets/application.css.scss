@@ -1,0 +1,44 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin: 0 0 0.67em 0;
+}
+footer {
+    margin-top: 20px;
+}
+ul.nav a {
+    font-size:16px;
+}
+.media {
+    margin-top: 0;
+}
+.navbar-collapse .navbar-form {
+    border: none;
+    margin: 0;
+    padding: 8px 0px;
+}
+.container>.navbar-header>a.navbar-brand,
+.container-fluid>.navbar-header>a.navbar-brand {
+    padding: 0;
+}
+@media (max-width: $screen-xs-max) {
+    .navbar-collapse .navbar-form {
+        padding: 8px 10px;
+    }
+    .container>.navbar-header>a.navbar-brand,
+    .container-fluid>.navbar-header>a.navbar-brand {
+        margin-left: 10px;
+    }
+    .navbar-toggle {
+        margin-right: 10px;
+    }
+}
