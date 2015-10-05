@@ -1,4 +1,4 @@
-.col-lg-8
+.col-md-8.mgb
   h1 Q&amp;A Service Top Page h1
   h2 Q&amp;A Service Top Page h2
   h3 Q&amp;A Service Top Page h3
@@ -7,8 +7,10 @@
   p Q&amp;A Service Top Page p
   p Q&amp;A Service Top Page p
   p Q&amp;A Service Top Page p
+  p あああああああああああああああああああああああああ
 
-.col-lg-4
-  h2. navi h2
-  h3. navi h3
-  h4. navi h4
+.col-md-4.mgb
+  .ad.mgb
+    img src="//placehold.it/300x250"
+
+  = render partial:'ranking.html.slim', locals: { title:'ランキング', data: [1,2,3,4,5,'PR'] }
