@@ -67,17 +67,17 @@ html lang="en"
       .container
         footer
           .row
-            .col-md-4.mgb
+            .col-sm-4.mgb
               h3 カテゴリ
               == category_tree_view(@cat_hash, @cat_tree, '0', 3)
-            .col-md-4.mgb
+            .col-sm-4.mgb
               = render partial:'ranking.html.slim', locals: { title:'ランキング', data: [1,2,3,4,5] }
-            .col-md-4.mgb
+            .col-sm-4.mgb
               h3 ソーシャル
               a.twitter-timeline href="https://twitter.com/GREE_news_jp" data-widget-id="649040846575112192"
                 | @GREE_news_jpさんのツイート
 
           hr
           .row
-            .col-md-12
+            .col-sm-12
               p &copy; Company 2015
