@@ -19,7 +19,7 @@ html lang="en"
     = javascript_include_tag "application"
 
   body
-    nav.navbar.navbar-default.navbar-static-top
+    nav.navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
           button.navbar-toggle type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse"
@@ -46,9 +46,9 @@ html lang="en"
           ul.nav.navbar-nav.navbar-right
             li
               a href=me_path
+                  | My Page
+                    &nbsp;
                   = show_glyphicon('user')
-                  | &nbsp;
-                    My Page
             li
               form.navbar-form role="search"
                 .input-group
@@ -56,6 +56,24 @@ html lang="en"
                     .input-group-btn
                       button.btn.btn-default type="submit"
                         = show_glyphicon('search')
+
+        .navbar-collapse.collapse.navbar-responsive-collapse
+          ul.nav.nav-pills.navbar-left style="margin: 4px 0;"
+            li
+              a href=destroy_user_session_path data-method="delete"
+                | 家電
+            li
+              a href=destroy_user_session_path data-method="delete"
+                | ファッション
+            li
+              a href=destroy_user_session_path data-method="delete"
+                | TV
+            li.active
+              a href=destroy_user_session_path data-method="delete"
+                | 冷蔵庫
+            li
+              a href=destroy_user_session_path data-method="delete"
+                | 洗濯機
 
     .container
       .row
