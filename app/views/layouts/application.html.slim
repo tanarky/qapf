@@ -26,7 +26,7 @@ html lang="en"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href=root_path
+          a href=root_path
             img src="//placehold.it/200x50"
         .navbar-collapse.collapse.navbar-responsive-collapse
           ul.nav.navbar-nav.navbar-left
@@ -47,9 +47,9 @@ html lang="en"
             li
               a href=me_path
                   | My Page
-                    &nbsp;
+                  | &nbsp;
                   = show_glyphicon('user')
-            li
+            li style="width:270px"
               form.navbar-form role="search"
                 .input-group
                   input.form-control type="text" placeholder="Search"
@@ -57,8 +57,8 @@ html lang="en"
                       button.btn.btn-default type="submit"
                         = show_glyphicon('search')
 
-        .navbar-collapse.collapse.navbar-responsive-collapse
-          ul.nav.nav-pills.navbar-left style="margin: 4px 0;"
+        .navbar-collapse.collapse.navbar-responsive-collapse.primary-header
+          ul.nav.nav-pills.navbar-left.nav-cats
             li
               a href=destroy_user_session_path data-method="delete"
                 | 家電

@@ -8,6 +8,28 @@ $grid-gutter-width: 20px;
 body {
     font-size: medium;
     margin-top: 120px;
+    font-family: "メイリオ","Hiragino Kaku Gothic Pro",Meiryo,"ヒラギノ角ゴ Pro W3","MS PGothic","MS UI Gothic",Helvetica,Arial,sans-serif;
+    line-height: 1.8;
+}
+p {
+    text-align:justify;
+}
+.navbar {
+    border: none;
+}
+.navbar-nav > li > a {
+    font-size: 90%;
+}
+.nav-pills > li > a {
+    border-radius:0;
+    color: #fff;
+    padding: 6px 10px;
+}
+.navbar-right {
+    margin-right: 0;
+}
+.form-control {
+    box-shadow: none;
 }
 .mgb {
     margin-bottom: 20px;
@@ -66,8 +88,8 @@ h6, .h6 {
 footer {
     margin-top: 20px;
 }
-ul.nav a {
-    font-size:16px;
+.primary-header {
+    background-color:#5590B5;
 }
 .media {
     margin-top: 0;
