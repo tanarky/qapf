@@ -6,13 +6,17 @@
       - data.each do |d|
         li
           a href="#"
-            span.rnk-num
-              = d
-            span.rnk-thumb
-              img src="//placehold.it/60x60"
-            span.rnk-body
-              span.rnk-desc
+            .media
+              .media-left.rnk-num
                 = d
-                | : あああああああああああああああああああああああああ
-              span.rnk-date
-                | 10/06(火) 08:50
+              .media-left
+                img src="//placehold.it/50x50"
+              .media-body
+                .name
+                  | 名無しさん
+                .date
+                  | 10/06 08:50
+                .desc
+                  = d
+                  | =あああああああああああああああああああああああああ
+                  | あああああああああああああああああああああああああ

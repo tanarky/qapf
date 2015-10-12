@@ -1,23 +1,21 @@
 .col-md-8.mgb
-  h1 Q&amp;A Service Top Page h1
-  h2 Q&amp;A Service Top Page h2
-  h3 Q&amp;A Service Top Page h3
-  h4 Q&amp;A Service Top Page h4
-  h5 Q&amp;A Service Top Page h5
-  p Q&amp;A Service Top Page p
-  p Q&amp;A Service Top Page p
-  p Q&amp;A Service Top Page p
-  p
-    | 元プロ野球選手の清原和博氏（４８）が11日、日本テレビ系「行列のできる法律相談所 あの時は本当にごめんなさいＳＰ」に出演し、
-    | "あの事件"の相手・平沼定晴氏（５０＝元ロッテ投手）に「バットを投げて本当にすみませんでした」と謝罪。
-    | 平沼氏はこの一件に関して初めてテレビに語った。
-    | １９８９年９月２３日、西武対ロッテ戦（西武球場）の４回２死一、二塁、打者の西武・清原氏は
-    | 投手のロッテ・平沼氏から左ヒジに死球を受け激怒、清原はバットを投げつけたところ、バットは平沼の右ひざに当たり、
-    | さらに向かってきた平沼に跳び蹴りの暴行をし、清原はプロ入り初の退場処分。３０万円の制裁金と２日間の出場処分を受けた。
-    | 平沼氏も怒りが収まらず、駐車場で清原を待ち伏せしたが、先輩があわてて止めるほどだったという。
+  - if current_user
+    form
+      .form-group
+        h3
+          | 気軽に質問してみよう
+        textarea.form-control rows="5"
+      input.btn.btn-primary type="submit" value="質問する"
+    hr
+
+  .row
+    .col-md-6.mgb
+      = render partial:'pickup', locals: { title:'最近の未解決質問', data: [1,2,3,4,5,6,7,8,9,10] }
+    .col-md-6.mgb
+      = render partial:'pickup', locals: { title:'最近解決した質問', data: [1,2,3,4,5,6,7,8,9,10] }
 
 .col-md-4.mgb
   .ad.mgb
     img src="//placehold.it/300x250"
 
-  = render partial:'ranking.html.slim', locals: { title:'ランキング', data: [1,2,3,4,5,'PR'] }
+  = render partial:'ranking', locals: { title:'アクセスランキング', data: [1,2,3,4,5] }
