@@ -1,4 +1,5 @@
 $grid-gutter-width: 20px;
+$navbar-default-bg: #f7f7f8;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -7,15 +8,23 @@ $grid-gutter-width: 20px;
 
 body {
     font-size: medium;
-    margin-top: 110px;
+    margin-top: 90px;
     font-family: "メイリオ","Hiragino Kaku Gothic Pro",Meiryo,"ヒラギノ角ゴ Pro W3","MS PGothic","MS UI Gothic",Helvetica,Arial,sans-serif;
     line-height: 1.8;
+    background-color: $navbar-default-bg;
 }
 p {
     text-align:justify;
 }
 a:hover {
     text-decoration: none;
+}
+.main-column {
+  background-color:#fff;
+  padding-top:20px;
+}
+.sub-column {
+    padding-top: 10px;
 }
 .navbar {
     border: none;
@@ -115,7 +124,7 @@ h6, .h6 {
     font-size: 24px;
 }
 footer {
-    margin-top: 20px;
+
 }
 .primary-header {
     background-color:#5590B5;
@@ -132,6 +141,15 @@ footer {
 .container-fluid>.navbar-header>a.navbar-brand {
     padding: 0;
 }
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-left: floor($grid-gutter-width / -2 );
+  margin-right: floor($grid-gutter-width / -2 );
+}
+
+// 画面サイズがスマフォ向けCSS設定
 @media (max-width: $screen-xs-max) {
     body {
         margin-top: 70px;
@@ -139,13 +157,4 @@ footer {
     .navbar-collapse .navbar-form {
         padding: 8px 10px;
     }
-    /*
-    .container>.navbar-header>a.navbar-brand,
-    .container-fluid>.navbar-header>a.navbar-brand {
-        margin-left: 10px;
-    }
-    .navbar-toggle {
-        margin-right: 10px;
-    }
-   */
 }
