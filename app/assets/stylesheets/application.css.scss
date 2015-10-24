@@ -1,4 +1,17 @@
-$grid-gutter-width: 20px;
+$grid-gutter-width:     20px;
+
+// https://designschool.canva.com/blog/100-color-combinations/
+// 13.autumn
+$theme-color-main:   #8D230F;
+$theme-color-sub1:   #1E434C;
+$theme-color-sub2:   #9B4F4F;
+$theme-color-accent: #C99E10;
+// 44. Wintery Reds
+$theme-color-main:   #A10115;
+$theme-color-sub1:   #D72C16;
+$theme-color-sub2:   #F0EFEA;
+$theme-color-accent: #C0B2B5;
+// 71. Mediterranean Afternoon
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
