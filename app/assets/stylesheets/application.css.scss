@@ -1,17 +1,28 @@
 $grid-gutter-width:     20px;
 $navbar-default-bg:  #f7f7f8;
+
 // https://designschool.canva.com/blog/100-color-combinations/
-// 13.autumn
+// 13. autumn
 $theme-color-main:   #8D230F;
-$theme-color-sub1:   #1E434C;
-$theme-color-sub2:   #9B4F4F;
+$theme-color-sub1:   #9B4F4F;
+$theme-color-sub2:   #1E434C;
 $theme-color-accent: #C99E10;
-// 44. Wintery Reds
-$theme-color-main:   #A10115;
-$theme-color-sub1:   #D72C16;
-$theme-color-sub2:   #F0EFEA;
-$theme-color-accent: #C0B2B5;
-// 71. Mediterranean Afternoon
+// 05. cool blues
+$theme-color-main:   #003b46;
+$theme-color-sub1:   #07575b;
+$theme-color-sub2:   #c4dfe6;
+$theme-color-accent: #66a5ad;
+// 10. Playful Greens & Blues
+$theme-color-main:   #324851;
+$theme-color-sub1:   #34675c;
+$theme-color-sub2:   #7da3a1;
+$theme-color-accent: #86ac41;
+//// 44. Wintery Reds
+//$theme-color-main:   #A10115;
+//$theme-color-sub1:   #D72C16;
+//$theme-color-sub2:   #F0EFEA;
+//$theme-color-accent: #C0B2B5;
+//// 71. Mediterranean Afternoon
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -38,20 +49,57 @@ a:hover {
 .sub-column {
     padding-top: 10px;
 }
-.navbar {
+
+// [START] nav
+nav.navbar-fixed-top {
     border: none;
 }
-.navbar-nav > li > a {
-    font-size: 90%;
+nav.navbar-fixed-top ul.navbar-nav > li > a {
+    font-size: 92%;
+    height: 50px;
 }
-.nav-pills > li > a {
-    border-radius:0;
+nav.navbar-fixed-top ul.nav-pills > li > a {
+    border-radius: 0;
     color: #fff;
     padding: 6px 10px;
 }
-.navbar-right {
+nav.navbar-fixed-top .navbar-right {
     margin-right: 0;
 }
+nav.navbar-fixed-top .navbar-collapse .navbar-form {
+    border: none;
+    margin: 0;
+    padding: 8px 0px;
+}
+nav.navbar-fixed-top>.container>.navbar-header>a.navbar-brand,
+nav.navbar-fixed-top>.container-fluid>.navbar-header>a.navbar-brand {
+    padding: 0;
+}
+nav.navbar-fixed-top > .container > .navbar-header,
+nav.navbar-fixed-top > .container > .navbar-collapse,
+nav.navbar-fixed-top > .container-fluid > .navbar-header,
+nav.navbar-fixed-top > .container-fluid > .navbar-collapse {
+  margin-left: floor($grid-gutter-width / -2 );
+  margin-right: floor($grid-gutter-width / -2 );
+}
+nav.navbar-fixed-top .link-header {
+    background-color: $theme-color-main;
+}
+nav.navbar-fixed-top .link-header li a:hover{
+    background-color: $theme-color-sub1;
+}
+nav.navbar-fixed-top .link-header li.active a{
+    background-color: $theme-color-accent;
+}
+nav.navbar-fixed-top .link-header li.active a:hover{
+    background-color: $theme-color-accent;
+}
+nav.navbar-fixed-top .link-header li {
+    margin-left: 0;
+}
+// [END] navbar
+
+
 .form-control {
     box-shadow: none;
 }
@@ -138,27 +186,8 @@ h6, .h6 {
 footer {
 
 }
-.primary-header {
-    background-color:#5590B5;
-}
 .media {
     margin-top: 0;
-}
-.navbar-collapse .navbar-form {
-    border: none;
-    margin: 0;
-    padding: 8px 0px;
-}
-.container>.navbar-header>a.navbar-brand,
-.container-fluid>.navbar-header>a.navbar-brand {
-    padding: 0;
-}
-.container > .navbar-header,
-.container > .navbar-collapse,
-.container-fluid > .navbar-header,
-.container-fluid > .navbar-collapse {
-  margin-left: floor($grid-gutter-width / -2 );
-  margin-right: floor($grid-gutter-width / -2 );
 }
 
 // 画面サイズがスマフォ向けCSS設定
