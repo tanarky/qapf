@@ -2,11 +2,6 @@ $grid-gutter-width:     20px;
 $navbar-default-bg:  #f7f7f8;
 
 // https://designschool.canva.com/blog/100-color-combinations/
-// 13. autumn
-$theme-color-main:   #8D230F;
-$theme-color-sub1:   #9B4F4F;
-$theme-color-sub2:   #1E434C;
-$theme-color-accent: #C99E10;
 // 05. cool blues
 $theme-color-main:   #003b46;
 $theme-color-sub1:   #07575b;
@@ -17,12 +12,51 @@ $theme-color-main:   #324851;
 $theme-color-sub1:   #34675c;
 $theme-color-sub2:   #7da3a1;
 $theme-color-accent: #86ac41;
-//// 44. Wintery Reds
-//$theme-color-main:   #A10115;
-//$theme-color-sub1:   #D72C16;
-//$theme-color-sub2:   #F0EFEA;
-//$theme-color-accent: #C0B2B5;
-//// 71. Mediterranean Afternoon
+// 13. autumn
+$theme-color-main:   #8D230F;
+$theme-color-sub1:   #9B4F4F;
+$theme-color-sub2:   #1E434C;
+$theme-color-accent: #C99E10;
+// 25. Timeless & Nautical
+$theme-color-main:   #00293c;
+$theme-color-sub1:   #1e656d;
+$theme-color-sub2:   #f1f3ce;
+$theme-color-accent: #f62a00;
+// 31. Lemonade Stand
+$theme-color-main:   #f70025;
+$theme-color-sub1:   #f25c00;
+$theme-color-sub2:   #f7efe2;
+$theme-color-accent: #f9a603;
+// 44. Wintery Reds
+$theme-color-main:   #A10115;
+$theme-color-sub1:   #D72C16;
+$theme-color-sub2:   #F0EFEA;
+$theme-color-accent: #C0B2B5;
+// 51. Grecian Holiday
+$theme-color-main:   #2f496e;
+$theme-color-sub1:   #2988bc;
+$theme-color-sub2:   #f4eade;
+$theme-color-accent: #ed8c72;
+// 58. Aqua Blues
+$theme-color-main:   #004d47;
+$theme-color-sub1:   #52958b;
+$theme-color-sub2:   #b9c4c9;
+$theme-color-accent: #128277;
+// 71. Mediterranean Afternoon
+$theme-color-main:   #8c0004;
+$theme-color-sub1:   #c8000a;
+$theme-color-sub2:   #e2c499;
+$theme-color-accent: #e8a735;
+// 67. Maritime Brights
+$theme-color-main:   #257985;
+$theme-color-sub1:   #5ea8a7;
+$theme-color-sub2:   #ffffff;
+$theme-color-accent: #ff4447;
+// 06. Outdoorsy & Natural
+$theme-color-main:   #486b00;
+$theme-color-sub1:   #2e4600;
+$theme-color-sub2:   #a2c523;
+$theme-color-accent: #7d4427;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
