@@ -119,7 +119,7 @@ GEM
       less (~> 2.6.0)
       sprockets (> 2, < 4)
       tilt
-    libv8 (3.16.14.3)
+    libv8 (3.16.14.11)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -309,7 +309,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   less-rails
-  libv8 (= 3.16.14.3)
+  libv8 (= 3.16.14.11)
   omniauth-facebook
   omniauth-google-oauth2
   omniauth-twitter
@@ -326,10 +326,10 @@ DEPENDENCIES
   slim-rails
   spring
   sqlite3
-  therubyracer (= 0.12.1)
+  therubyracer
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
